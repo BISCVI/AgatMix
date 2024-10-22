@@ -1,0 +1,11 @@
+.banner-form {
+	background-color: var(--color-dark-alt);
+	border-radius: var(--border-radius);
+
+	&__body {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		max-width: 516px;
+	}
+}

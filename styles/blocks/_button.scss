@@ -1,0 +1,35 @@
+.button {
+	@include flex-center(true);
+
+	height: var(--button-height);
+	padding-inline: 40px;
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--color-dark);
+	background-color: var(--color-accent);
+	border: var(--border);
+	border-radius: var(--border-radius);
+
+	@include hover {
+		color: var(--color-accent);
+		background-color: var(--color-dark-alt);
+		cursor: pointer;
+	}
+
+	&--transparent {
+		color: var(--color-accent);
+		background-color: transparent;
+	}
+
+	&--reverse {
+		@include hover {
+			color: var(--color-dark);
+			background-color: var(--color-accent);
+		}
+	}
+
+	&--non-style {
+		color: var(--color-light);
+		border: none;
+	}
+}

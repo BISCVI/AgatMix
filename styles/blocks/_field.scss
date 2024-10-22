@@ -1,0 +1,18 @@
+.field {
+	&__input {
+		width: 100%;
+		height: var(--input-height);
+		padding-inline: 24px;
+		border-radius: var(--border-radius);
+		border: none;
+		background-color: transparent;
+		/* transition: var(--transition-duration); */
+
+
+		&:focus {
+			border-color: var(--color-accent);
+			outline: none;
+			color: var(--color-gray-alt);
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.container {
+	max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+	margin-inline: auto;
+	padding-inline: var(--container-padding-x);
+}
+
+.visually-hidden { /* Скрывает элемент */
+  @include visually-hidden;
+}
+
+.hidden-mobile { /* Скрывает элемент при определенном медиазапросе */
+	@include mobile {
+		display: none !important;
+	}
+}
+
+.visible-mobile { /* Отобразит элемент на мобильных устройствах, но скроет на устройствах с большим разрешением экрана */
+	@include mobile-above {
+		display: none !important;
+	}
+}
+

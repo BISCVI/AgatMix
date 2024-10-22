@@ -1,0 +1,49 @@
+.artist-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition-duration: var(--transition-duration);
+
+	@include hover {
+		scale: 1.05;
+	}
+	
+	&__image {
+		max-width: 100%;
+		height: auto;
+		border-radius: var(--border-radius-image);
+
+		@include mobile {
+			max-width: 100vw;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__wrapper-link {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: end;
+		padding: 24px;
+		background-image: linear-gradient(transparent, transparent,#131e3ae1);
+		border-radius: var(--border-radius-image);
+	}
+
+	&__link {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		column-gap: 12px;
+		font-size: 14px;
+
+		h4 {
+			margin: 8px 0 0;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+:root {
+	--color-dark: #090F1D;
+	--color-dark-alt: #131E3A;
+	--color-light: #FFFFFF;
+	--color-accent: #D3F85A;
+	--color-gray: #FFFFFD;
+	--color-gray-alt: #838382;
+
+	--border: 1px solid var(--color-accent);
+	--border-radius: 8px;
+	--border-radius-image: 16px; /* Закругление углов картинок */
+	--border-radius-large: 28px; /* Закругление углов карточек */
+
+	--shadow: 0 -1px 0 0 var(--color-accent);
+
+	--font-family-base: 'Inter', sans-serif;
+	--font-family-alt: 'Canela', sans-serif;
+
+	--container-width: 1290px; /* Ширина сетки контейнера */
+	--container-padding-x: 16px; /* Ширина внутренних отступов сетки контейнера в мобильной версии */
+
+	--section-padding-y: 92px; /* Внутрненний отступ по вертикали у секций */
+
+	--input-height: 60px; /* Высота полей ввода */
+	--button-height: 52px; /* Высота кнопок */
+
+	--transition-duration: .3s; /* Время сробатывания анимиции */
+}

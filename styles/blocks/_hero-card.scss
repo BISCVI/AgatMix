@@ -1,0 +1,42 @@
+.hero-card {
+	width: 100%;
+	max-width: 304px;
+	padding: 20px;
+	background-color: var(--color-dark-alt);
+	border-radius: var(--border-radius-image);
+	border-top: 1px solid var(--color-accent);
+
+	/* @include tablet {
+		width: 70%;
+		height: auto;
+		padding: 12px 16px;
+	} */
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
+
+		@include tablet {
+			row-gap: 12px;
+		}
+	}
+
+	&__title {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__time,
+	&__bid {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+
+		@include tablet {
+			row-gap: 10px;
+		}
+	}
+
+	
+}

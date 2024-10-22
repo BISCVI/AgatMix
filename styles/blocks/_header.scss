@@ -1,0 +1,75 @@
+.header {
+	padding-block: 28px;
+
+	@include desktop {
+		padding-block: 14px;
+	}
+
+	@include mobile {
+		padding: 20px 0 14px;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		@include tablet {
+			max-width: 175px;
+		}
+
+		@include mobile {
+			width: 166px;
+		}
+	}
+
+	&__menu {
+		@include tablet {
+			font-size: 14px;
+		}
+
+		&-list {
+			display: flex;
+			align-items: center;
+			column-gap: 40px;
+
+			@include tablet {
+				column-gap: 20px;
+			}
+		}
+
+		&-link {
+			position: relative;
+			display: inline-flex;
+			align-items: center;
+			height: 48px;
+
+			@include hover {
+				&::after {
+					width: 100%;
+				}
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 75%;
+				left: 50%;
+				translate: -50%;
+				width: 0;
+				height: 2px;
+				background-color: var(--color-accent);
+				transition-duration: inherit;
+			}
+		}
+	}
+
+	&__button {
+		@include tablet {
+			height: 40px;
+			padding-inline: 25px;
+		}
+	}
+}
