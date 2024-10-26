@@ -99,9 +99,10 @@
 		}
 	}
 
-	&__artwork {
-		width: 100px;
-		aspect-ratio: 1;
+	&__artworks {
+		max-width: 575px;
+		width: 100%;
+		height: auto;
 	}
 
 }

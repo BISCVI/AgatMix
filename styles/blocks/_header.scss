@@ -16,15 +16,15 @@
 	}
 
 	&__logo {
-		width: 200px;
+		width: 180px;
 		height: auto;
 
 		@include tablet {
-			max-width: 175px;
+			max-width: 145px;
 		}
 
 		@include mobile {
-			width: 166px;
+			width: 125px;
 		}
 	}
 
@@ -63,7 +63,7 @@
 				translate: -50%;
 				width: 0;
 				height: 2px;
-				background-color: var(--color-accent);
+				background-color: var(--color-purple);
 				transition-duration: inherit;
 			}
 		}

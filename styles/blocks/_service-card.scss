@@ -21,6 +21,16 @@
 		scale: 1.05;
 	}
 
+	&__images {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 361px;
+		max-height: 340px;
+		overflow: hidden;
+		border-radius: var(--border-radius-image);
+	}
+
 	&__image {
 		align-self: center;
 		border-radius: var(--border-radius-image);

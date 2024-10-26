@@ -1,5 +1,8 @@
 .artwork {
-	
-
-	background-color: red;
+	width: 60%;
+	height: auto;
+	margin-inline: auto;
+	border: 3px solid var(--color-purple);
+	border-radius: var(--border-radius);
+	transform: scaleX(-1);
 }
