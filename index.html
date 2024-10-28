@@ -25,7 +25,7 @@
               <a class="header__menu-link" href="/">Коллекции</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="/">Артисты</a>
+              <a class="header__menu-link" href="#artists">Артисты</a>
             </li>
             <li class="header__menu-item">
               <a class="header__menu-link" href="/">Галлерея</a>
@@ -73,9 +73,9 @@
                   <button class="hero__button button" type="button">
                     Заказать сейчас
                   </button>
-                  <button class="button button--transparent button--non-style">
+                  <a href="#subscribe" class="button button--transparent button--non-style">
                     Узанть больше
-                  </button>
+									</a>
                 </div>
                 <div class="hero__stats">
                   <h2 class="visually-hidden">Statistic</h2>
@@ -444,7 +444,7 @@
 
       <section class="section container">
         <header class="section__header">
-          <h2 class="section__title">
+          <h2 id="artists" class="section__title">
             Популярные <span class="puddle-bg">Артисты</span><br />
             с моими украшениями
           </h2>
@@ -617,7 +617,7 @@
                 </div>
 
                 <div class="banner__body">
-                  <h2 class="banner__title">
+                  <h2 id="subscribe" class="banner__title">
                     Подпишись и получай <span class="puddle-bg">наши Обновления</span>
                     каждую Неделю
                   </h2>
@@ -659,13 +659,11 @@
     <footer class="footer container">
       <div class="footer__inner">
         <div class="footer__body">
-          <div class="footer__content">
+          <div class="footer__content hidden-mobile">
             <a class="footer-logo" href="/">
               <img
                 src="./images/AgatMixLogo.svg"
                 alt=""
-                width="196"
-                height="38"
                 loading="lazy"
               />
             </a>
