@@ -3,7 +3,9 @@
 .soc1als {
   &__list {
     display: flex;
-    column-gap: 12px;
+		flex-wrap: wrap;
+		justify-content: center;
+    gap: 20px 0;
   }
 
 	$color_1: #fff;

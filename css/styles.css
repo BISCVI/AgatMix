@@ -1131,8 +1131,9 @@ h4,
 
 .soc1als__list {
   display: flex;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 0;
 }
 .soc1als__item {
   display: inline-flex;
