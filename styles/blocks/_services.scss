@@ -1,5 +1,7 @@
 .services {
 	&__list {
+		justify-self: center;
+
 		&:not(:last-child) {
 			margin-bottom: 182px;
 

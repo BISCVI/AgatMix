@@ -820,6 +820,9 @@ h4,
   color: var(--color-accent);
 }
 
+.services__list {
+  justify-self: center;
+}
 .services__list:not(:last-child) {
   margin-bottom: 182px;
 }
@@ -833,6 +836,7 @@ h4,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 410px;
   min-height: 498px;
   padding: 20px;
   background-color: var(--color-dark-alt);
@@ -956,73 +960,78 @@ h4,
     text-align: center;
   }
 }
-.banner__image {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-}
-.banner__image--services {
+.banner__image-wrapper {
   max-width: 740px;
   width: 100%;
   height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.banner__image--artists {
-  max-width: 630px;
-  width: 100%;
-  height: 458px;
+.banner__image-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.banner__image-left, .banner__image-right {
+.banner__image-box .banner__image:nth-child(1) {
+  transform: translate(-10%, -70%);
+  width: 410px;
+  height: 400px;
+}
+.banner__image-box .banner__image:nth-child(2) {
+  transform: translate(-90%, -30%);
+  width: 410px;
+  height: 400px;
+}
+.banner__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   border-radius: 24px;
   transition-duration: var(--transition-duration);
+  overflow: hidden;
   /* Убирает баг при наведении */
 }
 @media (hover: hover) {
-  .banner__image-left:hover, .banner__image-right:hover {
+  .banner__image:hover {
     scale: 1.05;
   }
 }
 @media (hover: none) {
-  .banner__image-left:active, .banner__image-right:active {
+  .banner__image:active {
     scale: 1.05;
   }
 }
 @media (max-width: 1280px) {
-  .banner__image-left, .banner__image-right {
-    max-width: 80%;
-    height: auto;
+  .banner__image {
+    scale: 0.8;
+  }
+}
+@media (max-width: 1023px) {
+  .banner__image {
+    scale: 1;
   }
 }
 @media (max-width: 767px) {
-  .banner__image-left, .banner__image-right {
-    max-width: 50%;
-    height: auto;
+  .banner__image {
+    scale: 0.7;
   }
 }
-.banner__image-left--services {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
+.banner__image img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 24px;
 }
-.banner__image-left--artists {
-  position: absolute;
-  top: 36px;
-  left: 24px;
-  rotate: -11deg;
-  border-radius: 20px;
+.banner__image--one {
+  transform: translate(-60%, -70%) !important;
+  rotate: -12deg;
 }
-.banner__image-right--services {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.banner__image-right--artists {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  border-radius: var(--border-radius-image);
+.banner__image--two {
+  transform: translate(-10%, -30%) !important;
 }
 
 .banner-form {
