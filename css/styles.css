@@ -200,6 +200,8 @@ svg * {
   --input-height: 60px; /* Высота полей ввода */
   --button-height: 52px; /* Высота кнопок */
   --transition-duration: .3s; /* Время сробатывания анимиции */
+  --box-shadow-inset: inset -22px -14px 14px 2px hsla(0, 0%, 100%, .015), inset 8px 4px 20px 12px rgba(0, 0, 0, .8);
+  --box-shadow-inset-2: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .container {
@@ -888,10 +890,12 @@ h4,
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 16px;
 }
 .service-card__title h3 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
+  margin: 0;
 }
 .service-card__title-wrapper {
   display: flex;
@@ -899,6 +903,19 @@ h4,
   align-items: center;
   -moz-column-gap: 4px;
        column-gap: 4px;
+  box-shadow: var(--box-shadow-inset-2);
+  border-radius: var(--border-radius-image);
+  padding: 8px;
+}
+.service-card__description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  box-shadow: var(--box-shadow-inset-2);
+  border-radius: var(--border-radius-image);
+  padding: 8px 16px;
+  line-height: 1.3;
 }
 .service-card__bottom {
   display: flex;

@@ -26,4 +26,8 @@
 	--button-height: 52px; /* Высота кнопок */
 
 	--transition-duration: .3s; /* Время сробатывания анимиции */
+
+	--box-shadow-inset: inset -22px -14px 14px 2px hsla(0, 0%, 100%, .015), inset 8px 4px 20px 12px rgba(0, 0, 0, .8);
+
+	--box-shadow-inset-2: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .5);
 }
